@@ -4,6 +4,8 @@ import { Link, useNavigate } from 'react-router-dom'
 import './App.css'
 import axios from 'axios';
 
+const API_BASE_URL = "https://chat-app-wgrn.onrender.com";
+
 const Login = ({ setIsLoggedIn }) => {
   const navigate = useNavigate()
 
@@ -33,7 +35,7 @@ const Login = ({ setIsLoggedIn }) => {
 
     try {
       const res = await axios.post(
-        "http://localhost:4000/api/login",
+        `${API_BASE_URL}/api/login`,
         {
           email: form.email,
           passWord: form.passWord

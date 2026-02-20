@@ -4,7 +4,7 @@ import { createSocket } from "./socket";
 import axios from "axios";
 import "./chat.css";
 
-const API_BASE_URL = "http://localhost:4000";
+const API_BASE_URL = "https://chat-app-wgrn.onrender.com";
 
 export default function Chat() {
   const nav = useNavigate();
