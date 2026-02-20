@@ -1,7 +1,7 @@
 const mongoose = require('mongoose');
 
 function db(){
-    mongoose.connect('mongodb://127.0.0.1:27017/chatApp').then(()=>{
+    mongoose.connect('mongodb+srv://Pravesh52:Pravesh52@cluster0.r4dpczk.mongodb.net/').then(()=>{
         console.log("DB Connected...");
     }).catch((error)=>{
         console.log(error);
